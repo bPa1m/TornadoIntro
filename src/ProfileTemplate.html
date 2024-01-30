@@ -1,4 +1,48 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    font-size: 300%;
+}
+
+#info{
+    border-collapse: collapse;
+    border: 2px solid #555;
+    font-size: 175%;
+}
+
+#info td, #info th{
+    border: 1px solid #555;
+    padding: 3px;
+}
+
+img{border: 5px solid #555}
+</style>
+</head>
 <body>
-    user:{{uname}} name:{{rname}} DOB:{{dob}} email:{{email}}
+    <h1>{{rname}}'s Page</h1>
+    <img src={{img}} alt = "user image" width="350" height ="350">
+
+    <table id = "info">
+        <tr>
+            <th>Username:</th>
+            <th>{{uname}}</th>
+        </tr>
+        <tr>
+            <th>Birthday:</th>
+            <th>{{dob}}</th>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <th>{{email}}</th>
+        </tr>
+
+    </table>
+</body>
+</html>
+
